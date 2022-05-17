@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/modo
+    username: postgres
+    password: Olzhastop1
+
+flyway:
+  url: jdbc:postgresql://localhost:5432/modo
+  user: postgres
+  password: Olzhastop1
+  enabled: true
+  locations:
+    - 'classpath:db/migration'
